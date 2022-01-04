@@ -10,6 +10,8 @@ server.use(express.static('public')) //O express usa o contéudo estático que e
 
 server.set('views', path.join(__dirname, 'views')) //.join junta o caminho 'path' com o nosso __dirname que o src mas também com a view
 
+server.use(express.urlencoded({extended: true})) //middleware, faz a conexão da rota com o controllador, descodifica o conteudo enviado para o controllador
+
 server.use(route) //express usa o arquivo rotas
 
 server.listen(3000, () => console.log("Rodando")) //Selecionar porta para o servidor
