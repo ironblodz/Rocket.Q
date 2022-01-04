@@ -4,7 +4,8 @@
   "description": "Projeto desenvolvido para gerenciar perguntas anonimas de utilizadores direcionadas ao dono da página",
   "main": "src/server.js",
   "scripts": {
-    "start": "nodemon ."
+    "start": "nodemon .",
+    "init-db": "node src/db/init.js"
   },
   "keywords": [
     "Questions"
