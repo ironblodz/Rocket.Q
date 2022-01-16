@@ -5,6 +5,6 @@ const path = require('/src/db/rocketq.sqlite')
 
 module.exports = () => 
     open({
-        filename: '/src/db/rocketq.sqlite', //ficheiro da database
+        path.resolve(__dirname, rocketq.sqlite3), //ficheiro da database
         driver: sqlite3.Database,  //Comanda a database
     })
